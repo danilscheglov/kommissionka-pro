@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" role="img" aria-labelledby="title">
+  <title>5Post</title>
+  <rect width="420" height="160" fill="#ffffff"/>
+  <g transform="translate(14 18)">
+    <path
+      d="M110 108c-13 18-33 30-56 30-31 0-57-17-72-47"
+      fill="none"
+      stroke="#62c54b"
+      stroke-linecap="round"
+      stroke-width="18"
+    />
+    <text
+      x="18"
+      y="92"
+      fill="#5f6066"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="112"
+      font-weight="700"
+      letter-spacing="-6"
+    >5post</text>
+    <path
+      d="M332 25h43c11 0 21 6 26 16l4 8h-29c-8 0-15-7-17-14l-27 1v-11Z"
+      fill="#62c54b"
+    />
+    <text
+      x="368"
+      y="66"
+      fill="#111111"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="34"
+      font-weight="800"
+      letter-spacing="-1"
+      text-anchor="middle"
+    >X5</text>
+  </g>
+</svg>
