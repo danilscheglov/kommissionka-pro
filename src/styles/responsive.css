@@ -33,7 +33,7 @@
   #hero,
   #purchase,
   #sale,
-  #pawn,
+  #commission,
   #delivery,
   #contacts {
     scroll-margin-top: 128px;
@@ -270,6 +270,44 @@
     margin-top: 8px;
     font-size: 0.86rem;
     line-height: 1.38;
+  }
+
+  .call-menu {
+    width: 100%;
+    margin-top: 14px;
+    position: static;
+  }
+
+  .call-menu__link {
+    padding: 12px 14px;
+    border-radius: 16px;
+  }
+
+  .call-menu__summary-text {
+    font-size: 0.92rem;
+  }
+
+  .call-menu__summary-lead {
+    gap: 8px;
+  }
+
+  .call-menu__phone-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  .call-menu__note {
+    font-size: 0.8rem;
+  }
+
+  .call-menu__link {
+    min-height: 46px;
+    font-size: 0.94rem;
+  }
+
+  .call-menu__phone {
+    font-size: 0.94rem;
   }
 
   .stack-panel__accent {

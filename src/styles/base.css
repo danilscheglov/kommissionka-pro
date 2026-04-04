@@ -4,7 +4,7 @@
 
 :root {
   color-scheme: dark;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --bg: #080808;
   --panel: #f4f4f1;
   --panel-text: #151515;
@@ -170,7 +170,7 @@ html.is-programmatic-scroll .landing-page {
 #hero,
 #purchase,
 #sale,
-#pawn,
+#commission,
 #delivery,
 #contacts {
   scroll-margin-top: 108px;

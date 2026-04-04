@@ -13,7 +13,7 @@ export const initNavigation = () => {
     ...new Set(brandLink ? [brandLink, ...menuLinks, ...extraLinks] : [...menuLinks, ...extraLinks])
   ]
   const sections = [
-    ...document.querySelectorAll('#hero, #purchase, #sale, #pawn, #delivery, #contacts')
+    ...document.querySelectorAll('#hero, #purchase, #sale, #commission, #delivery, #contacts')
   ]
   let isCondensed = false
   const setActiveLink = createActiveLinkController(menuLinks)

@@ -10,6 +10,18 @@ const formatPhoneNumber = (phone) => {
   return `+${normalized[0]} (${normalized.slice(1, 4)}) ${normalized.slice(4, 7)}-${normalized.slice(7, 9)}-${normalized.slice(9, 11)}`
 }
 
+const formatPhoneHref = (phone) => {
+  const digits = phone.replace(/\D/g, '')
+
+  if (digits.length !== 11) {
+    return `tel:${phone.replace(/[^+\d]/g, '')}`
+  }
+
+  const normalized = digits.startsWith('8') ? `7${digits.slice(1)}` : digits
+
+  return `tel:+${normalized}`
+}
+
 const renderAddressLines = (address) => {
   const [cityPart, ...restParts] = address.split(', ')
   const cityLabel = cityPart.replace(/^г\.\s*/i, '')
@@ -72,13 +84,13 @@ export const renderContactSection = ({
                         </span>
                         ${renderAddressLines(address)}
                       </a>
-                      <a class="contact-location__phone" href="tel:${phone.replace(/[^+\d]/g, '')}">
+                      <a class="contact-location__phone" href="${formatPhoneHref(phone)}">
                         <span class="contact-location__icon" aria-hidden="true">
                           <svg viewBox="0 0 24 24">
                             <path d="M6.6 4h2.8l1.4 3.6-1.8 2a15 15 0 0 0 5 5l2-1.8L20 14.2V17a2 2 0 0 1-2.2 2A17.8 17.8 0 0 1 5 6.2 2 2 0 0 1 6.6 4Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
                           </svg>
                         </span>
-                        <span>${formatPhoneNumber(phone)}</span>
+                        <span data-phone-text>${formatPhoneNumber(phone)}</span>
                       </a>
                     </article>
                   `

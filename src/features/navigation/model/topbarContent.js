@@ -4,7 +4,7 @@ export const navigationLinks = [
   { href: '#hero', label: 'Главная' },
   { href: '#purchase', label: 'Скупка' },
   { href: '#sale', label: 'Продажа' },
-  { href: '#pawn', label: 'Залог' },
+  { href: '#commission', label: 'Комиссия' },
   { href: '#delivery', label: 'Доставка' },
   { href: '#contacts', label: 'Контакты' }
 ]
