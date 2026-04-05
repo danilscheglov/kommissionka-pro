@@ -4,6 +4,10 @@
     gap: 16px;
   }
 
+  .hero__actions {
+    grid-template-columns: 1fr;
+  }
+
   .service-card__text {
     max-width: none;
   }
@@ -186,6 +190,36 @@
     padding: 20px 16px 18px;
     gap: 14px;
     border-radius: 28px;
+  }
+
+  .hero__actions {
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero-action {
+    min-height: 64px;
+    padding: 12px 14px;
+    border-radius: 18px;
+  }
+
+  .hero-action__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+
+  .hero-action__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hero-action__label {
+    font-size: 0.88rem;
+  }
+
+  .hero-action__meta {
+    font-size: 0.84rem;
   }
 
   .service-card {

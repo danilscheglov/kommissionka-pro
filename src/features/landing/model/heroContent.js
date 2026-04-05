@@ -36,10 +36,45 @@ const services = [
   }
 ]
 
+const actions = [
+  {
+    id: 'max',
+    label: 'НАПИСАТЬ НАМ В MAX',
+    href: 'https://max.ru/u/f9LHodD0cOJvxVTzsrpfP-5st7us0sIF7TUihoI59gWGsE2c-ho-qBb1-i0',
+    icon: `
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12.4 3.6c-4 0-6.9 2.63-6.9 6.91v3.04c0 .59.11 1.15.31 1.67l1.09 2.85c.16.43.58.71 1.04.71.88 0 1.6-.72 1.6-1.6v-.27c.83.76 1.9 1.19 3.16 1.19 3.77 0 6.8-2.55 6.8-7.1 0-4.48-3.13-7.4-7.1-7.4Zm.14 3.18c2.22 0 3.83 1.58 3.83 4.05 0 2.52-1.54 4.11-3.75 4.11-2.22 0-3.83-1.57-3.83-4.05 0-2.52 1.53-4.11 3.75-4.11Z" fill="currentColor"/>
+      </svg>
+    `
+  },
+  {
+    id: 'telegram',
+    label: 'НАПИСАТЬ НАМ В TELEGRAM',
+    href: 'https://t.me/KomissionkaPRO3',
+    icon: `
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.7 4.2 3.9 10.7c-1.1.4-1.1 1 0 1.3l4.3 1.4 1.7 5.1c.2.6.4.8.8.8.3 0 .5-.1.8-.4l2.4-2.3 4.9 3.6c.9.5 1.5.3 1.8-.9L22.9 5c.3-1.3-.5-1.9-2.2-.8Z" fill="currentColor"/>
+      </svg>
+    `
+  },
+  {
+    id: 'phone',
+    label: 'ПОЗВОНИТЬ',
+    href: 'tel:+79997889919',
+    meta: '+7 (999) 788-99-19',
+    icon: `
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none">
+        <path d="M6.8 4.75h2.04c.39 0 .73.27.82.64l.64 2.74a.84.84 0 0 1-.24.82l-1.3 1.27a13.58 13.58 0 0 0 5.04 5.04l1.27-1.3a.84.84 0 0 1 .82-.24l2.74.64c.37.09.64.43.64.82v2.04a1 1 0 0 1-1 1A15.95 15.95 0 0 1 5.8 5.75a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9"/>
+      </svg>
+    `
+  }
+]
+
 export const heroContent = {
   eyebrow: 'Комиссионный магазин',
   brand,
   description:
     'Скупка / Продажа цифровой и бытовой техники. Принимаем технику на комиссию в разумные сроки, на прозрачных условиях.',
-  services
+  services,
+  actions
 }

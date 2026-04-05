@@ -174,6 +174,21 @@
   font-weight: 500;
 }
 
+.contact-card__requisite-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 204, 0, 0.6);
+  text-underline-offset: 0.14em;
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+.contact-card__requisite-link:hover {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
 .contact-card__info--secondary {
   padding-top: 4px;
 }
@@ -266,6 +281,16 @@
   background: rgba(0, 119, 255, 0.08);
 }
 
+.social-link--max:hover {
+  border-color: rgba(139, 68, 255, 0.42);
+  background: linear-gradient(
+    135deg,
+    rgba(68, 196, 255, 0.12) 0%,
+    rgba(95, 73, 255, 0.12) 52%,
+    rgba(183, 66, 255, 0.14) 100%
+  );
+}
+
 .social-link__icon {
   flex: 0 0 auto;
   display: grid;
@@ -289,6 +314,11 @@
 
 .social-link--vk .social-link__icon {
   background: #0077ff;
+  color: white;
+}
+
+.social-link--max .social-link__icon {
+  background: linear-gradient(135deg, #44c4ff 0%, #5f49ff 52%, #b742ff 100%);
   color: white;
 }
 

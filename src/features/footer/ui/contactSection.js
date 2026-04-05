@@ -38,6 +38,18 @@ const renderAddressLines = (address) => {
   `
 }
 
+const renderRequisiteItem = (item) => {
+  const match = item.match(/^(.*?:)\s*([A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,})$/i)
+
+  if (!match) {
+    return `<p>${item}</p>`
+  }
+
+  const [, label, email] = match
+
+  return `<p>${label} <a class="contact-card__requisite-link" href="mailto:${email}">${email}</a></p>`
+}
+
 export const renderContactSection = ({
   id,
   eyebrow,
@@ -107,7 +119,7 @@ export const renderContactSection = ({
             </button>
             <div class="contact-card__requisites" id="footer-requisites" hidden>
               <div class="contact-card__info contact-card__info--secondary">
-                ${requisites.map((item) => `<p>${item}</p>`).join('')}
+                ${requisites.map(renderRequisiteItem).join('')}
               </div>
             </div>
           </div>
