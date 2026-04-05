@@ -1,10 +1,3 @@
-const callMenu = {
-  label: 'Позвонить',
-  caption: 'Открыть меню связи',
-  phoneDisplay: '+7 (999) 788-99-19',
-  phoneHref: 'tel:+79997889919'
-}
-
 export const advantages = [
   {
     id: 'purchase',
@@ -35,8 +28,7 @@ export const advantages = [
         description:
           'Достаточно прислать фото и описание, чтобы быстро узнать ориентировочную сумму.'
       }
-    ],
-    callMenu
+    ]
   },
   {
     id: 'sale',
@@ -64,8 +56,7 @@ export const advantages = [
         title: 'Скидки',
         description: 'Подбираем лучшие предложения и помогаем купить технику по выгодной цене.'
       }
-    ],
-    callMenu
+    ]
   },
   {
     id: 'commission',
@@ -95,7 +86,6 @@ export const advantages = [
         title: 'Моментальная выплата',
         description: 'После оформления деньги можно получить сразу, без долгого ожидания.'
       }
-    ],
-    callMenu
+    ]
   }
 ]

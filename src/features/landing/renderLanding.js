@@ -1,6 +1,7 @@
 import { renderContactSection, contactSection } from '../footer'
 import { renderTopbar, topbarContent } from '../navigation'
 import { advantages, deliverySection, heroContent } from './model'
+import { renderFloatingContact } from './ui/floatingContact'
 import { renderDeliverySection } from './ui/delivery'
 import { renderHero } from './ui/hero'
 import { renderFeatureSection } from './ui/sections'
@@ -15,6 +16,7 @@ export const renderLanding = () => {
       ${featureSections}
       ${renderDeliverySection(deliverySection)}
       ${renderContactSection(contactSection)}
+      ${renderFloatingContact(heroContent.actions)}
     </main>
   `
 }

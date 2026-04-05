@@ -239,6 +239,8 @@
 
 .contact-card__requisites {
   overflow: hidden;
+  opacity: 0;
+  will-change: height, opacity;
 }
 
 .social-links {
